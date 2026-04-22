@@ -9,8 +9,9 @@ CallFunction <- function(file) {
   git_path <- "https://raw.githubusercontent.com/daotq-rnd-da/da-materials/refs/heads/main/r_functions/"
   source(paste0(git_path, file))
 }
-
+```
 ## Step 2: Add name of a specific function to call it
 Example:
 ```R
 CallFunction("AddMonthYear.R")
+```
