@@ -6,7 +6,7 @@
 ## Step 1: Run this code in your R script
 ```R
 CallFunction <- function(file) {
-  git_path <- "https://raw.githubusercontent.com/daotq-rnd-da/da-materials/refs/heads/main/r_functions/"
+  git_path <- "https://raw.githubusercontent.com/daotran-rnd/da-materials/refs/heads/main/r_functions/"
   source(paste0(git_path, file))
 }
 ```
