@@ -26,7 +26,8 @@ RemoveAccents <- function(data, target_column) {
   data <- data %>%
     mutate(
       !!new_col_name := stringi::stri_trans_general({{ target_column }}, "Latin-ASCII")
-    )
+    ) |> 
+    relocate(!!new_col_name, .after = {{ target_column }} )
   
   return(data)
 }
