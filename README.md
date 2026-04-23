@@ -13,5 +13,5 @@ CallFunction <- function(file) {
 ## Step 2: Add name of a specific function to call it
 Example:
 ```R
-CallFunction("AddMonthYear.R")
+CallFunction("CreateDateHierarchy.R")
 ```
