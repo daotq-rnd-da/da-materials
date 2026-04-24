@@ -34,7 +34,7 @@ LoadExcelSheets <- function(file_path) {
     
     ## Create a valid R variable name
     ## Replaces spaces/special chars with underscores or dots
-    var_name <- make.names(sheet)
+    var_name <- tolower(make.names(sheet))
     
     ## Assign to Global Environment
     assign(var_name, data, envir = .GlobalEnv)
