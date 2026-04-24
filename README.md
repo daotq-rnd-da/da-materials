@@ -19,13 +19,14 @@ Example:
 ```R
 CallFunction("CreateDateHierarchy.R")
 ```
-Now the function `CreateDateHierarchy()` is available in the `Functions` list of your R environment. 
+Now the function `CreateDateHierarchy()` is available in the functions list of your R environment. 
 
 ## Step 3: Use the function for the dedicated purpose 
-Example: We have a dataset bike_sales and there is a column called OrderDate. 
+Example: We have a dataset `bike_sales` and there is a column called `OrderDate`. 
 Here is how to use function `CreateDateHierarchy()`. 
 ```R
-CreateDateHierarchy(data = bike_sales, date_column = OrderDate)
+CreateDateHierarchy(data = bike_sales,
+                    date_column = OrderDate)
 ```
 
 **Enjoy and Stay Strong!⚡**
