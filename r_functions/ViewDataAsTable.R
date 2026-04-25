@@ -21,7 +21,7 @@ ViewDataAsTable <- function(data, height = 500, rows = 10) {
   if (!require("pacman")) install.packages("pacman")
   pacman::p_load(reactable, dplyr, snakecase)
   
-  # Data
+  # Data Processing
   df <- as.data.frame(data)
   colnames(df) <- snakecase::to_any_case(colnames(df), case = "big_camel")
   
@@ -40,7 +40,7 @@ ViewDataAsTable <- function(data, height = 500, rows = 10) {
     
     # Theme and Header
     theme = reactableTheme(
-      style = list(fontFamily = "Arial, Arial, sans-serif", fontSize = "13px"),
+      style = list(fontFamily = "Arial, sans-serif", fontSize = "13px"),
       headerStyle = list(
         position = "sticky",
         top = 0,
@@ -52,18 +52,19 @@ ViewDataAsTable <- function(data, height = 500, rows = 10) {
       )
     ),
     
-    # Format column
+    # Default Column Definition
     defaultColDef = colDef(
       headerVAlign = "bottom",
       minWidth = 150,
+      format = colFormat(separators = TRUE, digits = 2 ),
       style = function(value) {
-        if (is.numeric(value)) list(textAlign = "right", fontFamily = "Arial, Arial, monospace")
-        else list(textAlign = "left")
-      },
-      cell = function(value) {
-        if (is.numeric(value)) format(value, big.mark = ",", digits = 2, nsmall = 2)
-        else value
+        if (is.numeric(value)) {
+          list(textAlign = "right", fontFamily = "Arial, monospace")
+        } else {
+          list(textAlign = "left")
+        }
       }
     )
   )
 }
+
