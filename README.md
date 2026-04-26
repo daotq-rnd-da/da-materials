@@ -1,4 +1,4 @@
-# 📦 DA-Materials: R Functions Toolbox
+# 📦 RCraftToolbox: R functions for data wrangling and common analysis
 
 ## About this project
 This project is a code library for data wrangling in general. 
