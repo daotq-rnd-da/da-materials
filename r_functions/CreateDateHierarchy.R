@@ -2,12 +2,12 @@
 #' @description 
 #' This function takes a dataframe and a date column to generate multiple time-related 
 #' dimensions such as Month-Year, Year-Quarter, Month, Year, and Year-Month string.
-#' 
 #' @author daotq
+#' 
 #' @param data A dataframe or tibble.
 #' @param date_column The column containing date objects (unquoted).
-#' 
 #' @return A modified dataframe with new time-related columns.
+#' @export
 
 CreateDateHierarchy <- function(data, date_column) {
   
