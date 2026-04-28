@@ -1,13 +1,14 @@
 #' @title Clean Environment and Keep Functions
+#'
 #' @description 
 #' Removes all non-function objects (dataframes, vectors, lists, etc.) 
 #' from the specified environment while keeping all functions.
-#' 
 #' @author daotq
+#'
 #' @param env The environment to clean. Defaults to the Global Environment (.GlobalEnv).
-#' 
 #' @return Invisible NULL. The function's primary purpose is the side effect of object removal.
 #' @export
+
 CleanNonFunctions <- function(env = .GlobalEnv) {
   
   # List all objects in the specified environment
