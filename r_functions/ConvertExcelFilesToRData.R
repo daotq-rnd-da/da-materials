@@ -8,7 +8,6 @@
 #' @author daotq
 #'
 #' @param path Character. Directory path. If NULL, uses current working directory.
-#'
 #' @export
 
 ConvertExcelFilesToRData <- function(path = NULL) {
