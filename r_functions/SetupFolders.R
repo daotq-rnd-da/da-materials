@@ -1,4 +1,5 @@
 #' @title Setup Project Structure
+#'
 #' @description Creates a standardized folder structure at a specified path without overwriting existing data.
 #' @author daotq
 #' 
