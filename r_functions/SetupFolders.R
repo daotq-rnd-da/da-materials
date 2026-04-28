@@ -9,11 +9,10 @@
 
 SetupFolders <- function(base_path = getwd(), extra_folders = NULL) {
   
-  # 1. Normalize the base path
-  # This ensures the path is clean and recognized by the system
+  # Normalize the base path
   root <- normalizePath(base_path, winslash = "/", mustWork = FALSE)
   
-  # 2. Define core structure with nested data folders
+  # Define structure with nested data folders
   core_folders <- c(
     "data",
     file.path("data", "data_raw"),
@@ -22,37 +21,38 @@ SetupFolders <- function(base_path = getwd(), extra_folders = NULL) {
     "visuals"
   )
   
-  # 3. Combine with extra folders
+  # Combine with extra folders if any
   all_folders <- unique(c(core_folders, extra_folders))
   
-  # 4. Progress Reporting
+  # Progress Reporting
   message("--- Folder Setup Started ---")
   message(paste("Target Directory:", root))
   message("---------------------------------------")
   
   for (f in all_folders) {
-    # Combine the base path with the folder name
+    ## Combine the base path with the folder name
     target_dir <- file.path(root, f)
     
-    # CRITICAL CHECK: Only create if the directory DOES NOT exist
+    ## CRITICAL CHECK: Only create if the directory DOES NOT exist
     if (!dir.exists(target_dir)) {
       
-      ## recursive = TRUE ensures parent folders are created if missing
+      ### recursive = TRUE ensures parent folders are created if missing
       dir.create(target_dir, recursive = TRUE)
       
-      ## Double check after creation
+      ### Double check after creation
       abs_path <- normalizePath(target_dir, winslash = "/", mustWork = FALSE)
       message(paste("[Created]", f))
       message(paste("      at:", abs_path))
     } else {
       
-      ## If folder exists, we do nothing to protect existing files
+      ### If folder exists, do nothing to protect existing files
       abs_path <- normalizePath(target_dir, winslash = "/", mustWork = FALSE)
       message(paste("[Protected] Folder already exists - No changes made to:"))
       message(paste("           ", f))
       message(paste("      at:  ", abs_path))
     }
   }
-  
+
+  # Complete message 
   message("--- Folder Setup is Complete! ---")
 }
