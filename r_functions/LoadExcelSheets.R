@@ -2,12 +2,12 @@
 #' @description 
 #' Reads every sheet from a Excel file and assigns each to the 
 #' Global Environment as a standalone dataframe named after the sheet.
-#' 
 #' @author daotq
+#'
 #' @param file_path Character. The path to the .xlsx or .xls file.
-#' 
 #' @return Invisibly returns a character vector of the processed sheet names.
 #' @export
+
 LoadExcelSheets <- function(file_path) {
   
   # Setup environment
