@@ -1,5 +1,5 @@
 #' @title Import all datasets from a directory
-#' 
+#'
 #' @description 
 #' Automatically identifies and loads supported datasets into the Global Environment. 
 #' Supported formats: .RData, .rds, .csv, .xlsx, .xls, .sav (SPSS), .dta (Stata), 
@@ -11,8 +11,8 @@
 #' working directory.
 #' @param include_subfolder Logical. If TRUE, searches all subdirectories. 
 #' Defaults to FALSE.
+#'
 #' @export
-
 LoadDatasets <- function(path = NULL, include_subfolder = FALSE) {
   
   # Setup
