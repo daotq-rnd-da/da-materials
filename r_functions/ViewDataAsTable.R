@@ -1,9 +1,9 @@
 #' @title Format data table for viewing
-#' @description
-#' Generates a stylized and interactive data table. 
-#' The function automatically standardizes column names to BigCamelCase, 
-#' formats numeric values with thousand separators and two decimal places, 
-#' and freezes header for better navigation.
+#'
+#' @description Generates a stylized and interactive data table. 
+#'     The function automatically standardizes column names to BigCamelCase, 
+#'     formats numeric values with thousand separators and two decimal places, 
+#'     and freezes header for better navigation.
 #' @author daotq
 #' 
 #' @param data A data frame, tibble, or data.table to be displayed.
