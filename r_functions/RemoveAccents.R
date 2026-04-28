@@ -1,7 +1,7 @@
 #' @title Remove accents from a dataframe column
-#' @description 
-#' This function converts accented characters (typically in Vietnamese words) to their unaccented 
-#' Latin-ASCII equivalents. It is particularly helpful for cleaning names or 
+#'
+#' @description This function converts accented characters (typically in Vietnamese words) 
+#' to their unaccented Latin-ASCII equivalents. It is particularly helpful for cleaning names or 
 #' addresses in urban/demographic datasets to ensure system compatibility and standardization.
 #' E.g.: Convert value of "Hồ Chí Minh City" to "Ho Chi Minh City" in a column "CityName".
 #' @author daotq
