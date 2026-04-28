@@ -1,6 +1,6 @@
 #' @title Load multiple Excel sheets
-#' @description 
-#' Reads every sheet from a Excel file and assigns each to the 
+#' 
+#' @description Reads every sheet from a Excel file and assigns each to the 
 #' Global Environment as a standalone dataframe named after the sheet.
 #' @author daotq
 #'
