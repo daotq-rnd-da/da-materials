@@ -1,5 +1,4 @@
 #' @title Save all data frame objects in the global environment as .RData files
-#' 
 #' @description Automatically identifies and exports all `data.frame` objects from the 
 #' Global Environment into `.RData` files.
 #' @author daotq
@@ -7,7 +6,6 @@
 #' @param path Character. The directory path where files will be saved. 
 #' If there is no input for path, data will be stored in a folder "saved_data" 
 #' which is created in the current working directory.
-#'
 #' @export
 
 SaveDataFiles <- function(path = NULL) {
