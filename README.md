@@ -7,21 +7,21 @@ This project is a code library for data wrangling in general.
 You can use function files from this github repo directly in your R environment without manually downloading the files, ensuring you are always working with the most up‑to‑date version of the code. 
 This instruction is designed to call functions in folder r_functions separately.
 
-### Step 1: Run this code in your R script
+### Step 1️⃣: Run this code in your R script
 ```R
 CallRCraftToolbox <- function(file) {
   git_path <- "https://raw.githubusercontent.com/daotran-rnd/da-materials/refs/heads/main/r_functions/"
   source(paste0(git_path, file))
 }
 ```
-### Step 2: Add name of a specific function to call it
+### Step 2️⃣: Add name of a specific function to call it
 Example:
 ```R
 CallRCraftToolbox("CreateDateHierarchy.R")
 ```
 Now the function `CreateDateHierarchy()` is available in the functions list of your R environment. 
 
-### Step 3: Use the function for its designated purpose 
+### Step 3️⃣: Use the function for its designated purpose 
 Example: We have a dataset `bike_sales` and there is a column called `OrderDate`. 
 Here is how to use function `CreateDateHierarchy()`. 
 ```R
