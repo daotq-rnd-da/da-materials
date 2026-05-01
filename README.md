@@ -1,4 +1,6 @@
 # 📦 RCraftToolbox: R functions for data wrangling and common analysis
+<br>
+<br>
 
 ## About this project 🤔
 This project is a code library for data wrangling in general. 
@@ -52,6 +54,5 @@ Kindly read description in each R function to know parameters to input.
   *	TransposeData
   *	CreateDateHierarchy
   *	RemoveAccents
-<br>
 
 **Enjoy and Stay Strong!⚡**
