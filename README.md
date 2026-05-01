@@ -1,4 +1,4 @@
-# 📦 RCraftToolbox: R functions for data wrangling and common analysis
+# 📦 RCraftToolbox: R functions for data wrangling
 
 ## About this project 🤔
 This project is a code library for data wrangling in general. 
