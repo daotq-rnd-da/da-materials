@@ -2,7 +2,7 @@
 
 ## About this project 🤔
 This project is a code library for data wrangling in general. 
-
+<br>
 
 ## Instruction 🔖
 You can use function files from this github repo directly in your R environment without manually downloading the files, ensuring you are always working with the most up‑to‑date version of the code. 
@@ -30,7 +30,7 @@ CreateDateHierarchy(data = bike_sales,
                     date_column = OrderDate)
 ```
 Kindly read description in each R function to know parameters to input. 
-
+<br>
 
 ## Recommended order for going through R functions 🏃🏻‍♂️‍➡️
 **Batch 1: R working space**
@@ -52,5 +52,6 @@ Kindly read description in each R function to know parameters to input.
   *	TransposeData
   *	CreateDateHierarchy
   *	RemoveAccents
+<br>
 
-** Enjoy and Stay Strong!⚡**
+**Enjoy and Stay Strong!⚡**
