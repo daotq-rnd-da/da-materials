@@ -43,17 +43,17 @@ Kindly read description in each R function to know parameters to input.
   *	CleanNonFunctions
   *	CleanRWorkspace
 
-**Batch 2: Load and save data tables**
+**Batch 2: Load and save data**
   *	LoadDatasets 
   *	LoadExcelSheets 
   *	ConverExcel2RData
   *	SaveDataFiles
 
-**Batch 3: Data wrangling / Working with data tables**
+**Batch 3: Data wrangling / working with tables**
   *	ViewDataAsTable
   *	QuickDataSummary
   *	TransposeData
   *	CreateDateHierarchy
   *	RemoveAccents
 
-## Enjoy and Stay Strong!⚡
+### Enjoy and stay strong!⚡
