@@ -30,4 +30,25 @@ CreateDateHierarchy(data = bike_sales,
 ```
 Kindly read description in each R function to know parameters to input. 
 
-**Enjoy and Stay Strong!⚡**
+## Recommended order for going through R functions 🏃🏻‍♂️‍➡️
+**Batch 1: R working space**
+  •	SetupRProjectHere
+  •	SetupFolders
+  •	SetupRLibraries
+  •	CleanNonFunctions
+  •	CleanRWorkspace
+
+**Batch 2: Load and save data tables**
+  •	LoadDatasets 
+  •	LoadExcelSheets 
+  •	ConverExcel2RData
+  •	SaveDataFiles
+
+**Batch 3: Data wrangling / Working with data tables**
+  •	ViewDataAsTable
+  •	QuickDataSummary
+  •	TransposeData
+  •	CreateDateHierarchy
+  •	RemoveAccents
+
+## Enjoy and Stay Strong!⚡
