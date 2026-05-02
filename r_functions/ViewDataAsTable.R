@@ -12,10 +12,14 @@
 #'     Defaults to 500.
 #' @param rows Numeric. The default number of rows to display per page. 
 #'     Defaults to 10.
+#' @param decimal_value Numeric. The number of decimal value shown in result table. 
+#'     Defaults to 2
 #' @return A `reactable` HTML widget object.
 #' @export 
 
-ViewDataAsTable <- function(data, height = 500, rows = 10) {
+ViewDataAsTable <- function(data, 
+                            height = 500, rows = 10,
+                            decimal_value = 2) {
   
   # Setup 
   if (!require("pacman")) install.packages("pacman")
@@ -56,7 +60,7 @@ ViewDataAsTable <- function(data, height = 500, rows = 10) {
     defaultColDef = colDef(
       headerVAlign = "bottom",
       minWidth = 150,
-      format = colFormat(separators = TRUE, digits = 2 ),
+      format = colFormat(separators = TRUE, digits = decimal_value ),
       style = function(value) {
         if (is.numeric(value)) {
           list(textAlign = "right", fontFamily = "Arial, monospace")
