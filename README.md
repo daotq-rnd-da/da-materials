@@ -40,8 +40,9 @@ Kindly read description in each R function to know parameters to input.
   *	SetupRProjectHere
   *	SetupFolders
   *	SetupRLibraries
-  *	CleanNonFunctions
   *	CleanRWorkspace
+  *	CleanNonFunctions
+  *	MemoryProfiler
 
 **Batch 2: Load and save data**
   *	LoadDatasets 
