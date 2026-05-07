@@ -56,5 +56,6 @@ Kindly read description in each R function to know parameters to input.
   *	TransposeData
   *	CreateDateHierarchy
   *	RemoveAccents
+  *	CheckMissingData
 
 ### Enjoy and stay strong!⚡
