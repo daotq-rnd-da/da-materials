@@ -23,7 +23,8 @@ SetupRLibraries <- function() {
     "tidyverse", "readr", "dplyr", "tidyr", "magrittr", # Core packages
     "stringi", "janitor", "lubridate", "zoo",           # Cleaning and Transformation
     "plotly", "highcharter", "echarts4r", "ggplot2",    # Visualization
-    "readxl", "writexl"                                 # Load and Export
+    "readxl", "writexl" , "zip"                         # Load and Export
+    
   )
   
   # Notify user of the start
