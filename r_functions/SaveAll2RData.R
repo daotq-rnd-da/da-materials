@@ -9,7 +9,7 @@
 #' which is created in the current working directory.
 #' @export
 
-SaveAll2Rdata <- function(path = NULL) {
+SaveAll2RData <- function(path = NULL) {
   
   # Setup default path
   if (is.null(path)) {
