@@ -48,7 +48,8 @@ Kindly read description in each R function to know parameters to input.
   *	LoadDatasets 
   *	LoadExcelSheets 
   *	ConverExcel2RData
-  *	SaveDataFiles
+  *	SaveAll2RData
+  *	SaveData
 
 **Batch 3: Data wrangling / working with tables**
   *	ViewDataAsTable
