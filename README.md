@@ -53,9 +53,10 @@ Kindly read description in each R function to know parameters to input.
 **Batch 3: Data wrangling / working with tables**
   *	ViewDataAsTable
   *	QuickDataSummary
+  *	CheckMissingData
   *	TransposeData
+  *	JoinData
   *	CreateDateHierarchy
   *	RemoveAccents
-  *	CheckMissingData
 
 ### Enjoy and stay strong!⚡
